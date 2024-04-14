@@ -44,4 +44,8 @@ num = [el for el in lst if el.isdigit()]
 print(lett)
 print(num)
 
+#Преобразуйте список [«a», «s», «1», «a», «32», «23»] в set и выведите на экран. Что изменилось?
+st = set(['a', 's', '1', 'a', '32', '23'])
+print(st)
+
 
