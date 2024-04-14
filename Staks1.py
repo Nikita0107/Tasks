@@ -1,7 +1,11 @@
+
+
 #Дано двузначное число. Вывести число, полученное при перестановке цифр исходного числа.
 n = input()
 nlist = list(n)
-nlist.reverse()
+nlist.sort(reverse=True)
+#nlist[::-1]
+#nlist.reverse()
 q = int(''.join(map(str, nlist)))
 
 print(q)
@@ -37,6 +41,9 @@ print(Human)
 
 del Human['age']
 
+
+
+
 #Дан список [«a», «s», «1», «a», «32», «23»]. Разбейте его на два списка: только с буквами и только с числами.
 lst= ['a', 's', '1', 'a', '32', '23']
 lett = [el for el in lst if el.isalpha()]
@@ -44,8 +51,8 @@ num = [el for el in lst if el.isdigit()]
 print(lett)
 print(num)
 
+
 #Преобразуйте список [«a», «s», «1», «a», «32», «23»] в set и выведите на экран. Что изменилось?
 st = set(['a', 's', '1', 'a', '32', '23'])
 print(st)
-
 
