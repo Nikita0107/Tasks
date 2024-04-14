@@ -37,4 +37,11 @@ print(Human)
 
 del Human['age']
 
+#Дан список [«a», «s», «1», «a», «32», «23»]. Разбейте его на два списка: только с буквами и только с числами.
+lst= ['a', 's', '1', 'a', '32', '23']
+lett = [el for el in lst if el.isalpha()]
+num = [el for el in lst if el.isdigit()]
+print(lett)
+print(num)
+
 
